@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+    <checkout_onepage_index>
+        <reference name="head">
+            <action method="addJs"><file>mage/threestep.js</file></action>
+        </reference>
+    </checkout_onepage_index>
+    <checkout_onepage_review>
+        <reference name="checkout.onepage.review.info.items.after">
+            <block type="threestep/payment_form" name="payment.form.threestep" template="threestep/payment/form.phtml">
+                <action method="setMethodInfo"></action>
+            </block>
+        </reference>
+    </checkout_onepage_review>
+</layout>
+
+

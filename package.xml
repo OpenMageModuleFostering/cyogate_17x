@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>CyoGate_17x</name>
+    <version>1.7.0.2</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This payment module enables processing of Credit Card transactions using the CyoGate Payment Gateway.</summary>
+    <description>This payment module enables the processing of Credit Card transactions through Magento v1.7.x using the CyoGate Payment Gateway.  It uses the CyoGate "Three Step Redirect" API and is not compatible with One-Step-Checkout</description>
+    <notes>Last updated on 03/01/2014</notes>
+    <authors><author><name>CyoGate Merchant Solutions</name><user>cyberoptic</user><email>jon@cyop.net</email></author></authors>
+    <date>2014-03-01</date>
+    <time>16:35:06</time>
+    <contents><target name="magelocal"><dir name="GatewayProcessingServices"><dir name="ThreeStep"><dir name="Block"><dir name="Payment"><file name="Form.php" hash="a886c978ea1c74ac1d3a9e837b89c502"/><file name="Iframe.php" hash="93aa9c8155a94423daa300e681c94560"/></dir></dir><dir name="Helper"><file name="Data.php" hash="81b7e8e3a57e5c90c1562922a9a006b6"/></dir><dir name="Model"><file name="Observer.php" hash="2f21135a82157df250ff6bfe38c3bd42"/><file name="PaymentMethod.php" hash="f1ffa5c96e9b0db249c145f836c51085"/><file name="Request.php" hash="a4adcfe1fddfbae5e345252f8e6b25e5"/><file name="Session.php" hash="562dfac163beba663d97214625f6a3c1"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PaymentController.php" hash="3aec589ae0e5b8e800020d1700c38d96"/></dir><file name="PaymentController.php" hash="ff05b9b77e74c91d93cd38e9ec30c586"/></dir><dir name="etc"><file name="config.xml" hash="7820ce4635a6b5261033705d1ead80ea"/><file name="system.xml" hash="7095be3cc10b1e4f967bba71bd49fff8"/></dir></dir></dir></target><target name="magedesign"><dir><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="threestep.xml" hash=""/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="threestep.xml" hash=""/></dir></dir></dir><dir name="default"><dir name="default"><dir name="template"><dir name="threestep"><dir name="payment"><file name="form.phtml" hash=""/><file name="iframe.phtml" hash=""/><file name="info.phtml" hash=""/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="GatewayProcessingServices_ThreeStep.xml" hash=""/></dir></target><target name="mageweb"><dir name="js"><dir name="mage"><file name="threestep.js" hash=""/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.5.9</max></php></required></dependencies>
+</package>

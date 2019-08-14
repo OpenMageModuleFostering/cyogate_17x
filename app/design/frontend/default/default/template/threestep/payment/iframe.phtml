@@ -1,0 +1,25 @@
+<?php
+$_params = $this->getParams();
+$_helper = $this->helper('threestep');
+?>
+<html>
+<head>
+<script type="text/javascript">
+//<![CDATA[
+<?php if (isset($_params['redirect'])): ?>
+window.location="<?php echo $this->escapeUrl($_params['redirect']) ?>";
+<?php endif; ?>
+<?php if (isset($_params['redirect_parent'])): ?>
+window.top.location="<?php echo $this->escapeUrl($_params['redirect_parent']) ?>";
+<?php endif; ?>
+<?php if (isset($_params['error_msg'])): ?>
+window.top.threeStepModel.showError(<?php echo $this->helper('core')->jsonEncode($_params['error_msg']) ?>);
+<?php if (isset($_params['order_id'])): ?>
+window.top.threeStepModel.successUrl="<?php echo $_helper->getSuccessOrderUrl($_params) ?>";
+<?php endif; ?>
+<?php endif; ?>
+//]]>
+</script>
+</head>
+<body></body>
+</html>
