@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/CyoGate_17x",
+    "name": "openmage-module-fostering\/cyogate_17x",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This payment module enables processing of Credit Card transactions using the CyoGate Payment Gateway.",
     "authors": [
